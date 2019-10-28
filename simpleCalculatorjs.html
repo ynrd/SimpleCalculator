@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Only simple calculator</title>
+    <script>
+        
+        function sumar(){
+            resultado.value=(parseInt(number1.value) + parseInt(number2.value));
+        }
+
+        function restar(){
+            resultado.value=number1.value - number2.value;
+        }
+
+        function multiplicar(){
+            resultado.value=number1.value*number2.value;
+        }
+        function dividir(){
+            resultado.value=number1.value/number2.value;
+        }
+
+    </script>
+</head>
+<body style="text-align: center; font-size: large;">
+    
+    <h1>Calculator for Tiranosaurius Rex!</h1>
+
+    Introduce un número <input id="number1" type="number"/>
+    <br/>
+    Introduce otro número <input id="number2" type="number"/>
+    <br/>
+    <button onclick="sumar();">Aprieta aquí si quieres sumarlos</button>
+    <br/>
+    <button onclick="restar();">Aprieta aquí si quieres restarlos</button>
+    <br/>
+    <button onclick="multiplicar();">Aprieta aquí para multiplicar</button>
+    <br/>
+    <button onclick="dividir();">Aprieta aquí para dividir</button>
+    <br/>
+    Resultado <input id="resultado" type="number"/>
+    
+</body>
+</html>

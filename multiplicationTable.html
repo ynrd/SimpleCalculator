@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabla de multiplicar</title>
+    <script>
+        
+
+        function multiplication(){
+            for (var i=0; i<=10; i++){
+                var result=i*number.value;
+                alert (i + "x" + number.value + "=" + result);
+            }
+        }
+    </script>
+
+</head>
+<body>
+    Introduce un número <input id="number" type="number"/>
+    <button onclick="multiplication();">Multiplica!</button>
+    
+</body>
+</html>
